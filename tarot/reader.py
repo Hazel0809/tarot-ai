@@ -7,6 +7,7 @@ import re
 import time
 from datetime import datetime
 from typing import Literal
+
 from dotenv import load_dotenv
 from openai import OpenAI
 from pydantic import BaseModel, Field, ValidationError
