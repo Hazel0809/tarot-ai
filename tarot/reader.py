@@ -6,7 +6,7 @@ import random
 import re
 import time
 from datetime import datetime
-
+from typing import Literal
 from dotenv import load_dotenv
 from openai import OpenAI
 from pydantic import BaseModel, Field, ValidationError
@@ -21,11 +21,15 @@ SYSTEM_PROMPT = """你是溫和、務實的塔羅牌解讀助理，僅供娛樂�
 2. 不做醫療、法律、投資或生死相關的預言，不使用恐嚇語氣。
 3. 全部使用繁體中文，語氣具體、不空泛。
 4. 若提問顯示使用者非常痛苦或有傷害自己的念頭，請在 advice 溫和建議聯繫信任的人或專業協助。
-5. 只輸出符合指定 JSON Schema 的內容。"""
-
+5. 只輸出符合指定 JSON Schema 的內容。
+6. 問題含「是不是、會不會、該不該、能不能、是否」等字眼，is_closed 必須為 true。
+7. rewritten_question 必須與原問題不同，且以「如何」或「什麼」開頭，把是非題改成開放式問題。
+   範例：「我該不該換工作？」→「我可以如何評估目前的工作是否適合我？」
+   範例：「我是不是容易出車禍？」→「我可以如何提高日常的安全意識？」
+8. card_meanings 不要重複牌名與關鍵字，直接解讀這張牌對提問的意義。"""
 
 class QuestionAnalysis(BaseModel):
-    category: str = Field(description="問題類別：感情、事業、學業、人際、自我成長、其他 其中之一")
+    category: Literal["感情", "事業", "學業", "人際", "自我成長", "其他"] = Field(description="問題類別")
     is_closed: bool = Field(description="是否為是非題（例如『會不會…』）")
     rewritten_question: str = Field(description="改寫成更適合塔羅探討的開放式問題")
 
