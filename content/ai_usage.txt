@@ -1,6 +1,6 @@
 - 開發輔助：使用 Claude（Anthropic）協助規劃專案架構、撰寫程式初稿、測試與 GitHub Actions 設定。
 - 執行時的 AI：本地 Ollama 的 qwen3:1.7b，透過 OpenAI 相容 API 呼叫，負責提問解析與牌義解讀。
-- 我自己修改了：在 Windows 上用 Docker Desktop 與 uv 建立執行環境，將專案上傳 GitHub，並設定 Actions 自動部署 Pages。
+- 我自己修改了：測試發現「改寫問題」只是換字、類別出現英文，於是用 Literal 限制類別為固定中文選項，並在提示詞加入是非題判斷與改寫規則；第一次調整後模型照抄範例、牌義只複述關鍵字，再修改提示詞要求緊扣提問後改善。仍可能出現是非題判斷錯誤，屬小模型限制。
 - 我自己驗證了：在本機執行 uv run pytest，9 個測試全數通過；ruff check 通過程式碼檢查。
 - 我自己驗證了：啟動本機伺服器 tarot.server，在瀏覽器輸入問題，確認能得到 AI 解讀，且結果會存進 results/readings.json。
 - 我自己驗證了：用 git status 確認 .env 沒有被 Git 追蹤，金鑰與密碼不會上傳。
