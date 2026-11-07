@@ -1,4 +1,7 @@
 - 開發輔助：使用 Claude（Anthropic）協助規劃專案架構、撰寫程式初稿、測試與 GitHub Actions 設定。
 - 執行時的 AI：本地 Ollama 的 qwen3:1.7b，透過 OpenAI 相容 API（http://127.0.0.1:11434/v1）呼叫，負責提問解析與牌義解讀。
-- 【請依實際情況修改】我自己修改了：（例如：調整提示詞、更換模型、加入的問題類別、修改頁面樣式）
-- 【請依實際情況修改】我自己驗證了：（例如：用 --seed 重現同一組牌；執行 pytest 與 ruff；檢查 .env 未被 commit）
+- 【請依實際情況修改】我自己修改了：（- 我自己修改了：將 content/ai_usage.txt 與 README 的說明改寫成自己的話，並補上帳號與執行環境（Windows、Docker Desktop、uv）
+- 【請依實際情況修改】我自己驗證了：（- 我自己驗證了：在本機執行 uv run pytest，9 個測試全數通過；執行 ruff check 通過程式碼檢查。
+- 我自己驗證了：啟動本機伺服器 tarot.server，在瀏覽器輸入問題，確認能得到 AI 解讀，且結果會存進 results/readings.json。
+- 我自己驗證了：用 git status 確認 .env 沒有被 Git 追蹤，金鑰與密碼不會上傳。
+- 我自己驗證了：抽牌由程式的 random 決定，AI 只負責解讀，不會自行更改牌面。
