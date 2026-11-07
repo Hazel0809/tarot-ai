@@ -5,7 +5,7 @@
 
 > 塔羅僅供娛樂與自我反思，不構成醫療、法律、投資等專業建議。
 
-作品頁：`https://<你的帳號>.github.io/<repo 名稱>/`（由 GitHub Actions 自動部署）
+作品頁：`https://Hazel0809.github.io/tarot-ai/`（由 GitHub Actions 自動部署）
 
 ## 使用到的 W6 能力
 - **結構化輸出**：`response_format` 傳入 Pydantic 產生的 JSON Schema，並用 Pydantic 驗證、失敗自動重試（`tarot/reader.py`）。
