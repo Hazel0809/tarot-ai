@@ -1,76 +1,25 @@
 [
   {
-    "time": "2026-11-07T13:36:28+08:00",
+    "time": "2026-11-07T13:47:09+08:00",
     "model": "qwen3:1.7b",
-    "seconds": 18.3,
-    "question": "我該不該報名英文檢定？",
+    "seconds": 24.9,
+    "question": "我的感情發展",
     "cards": [
       {
         "position": "現況",
-        "number": 5,
-        "name": "教皇",
-        "english": "The Hierophant",
+        "number": 17,
+        "name": "星星",
+        "english": "The Star",
         "reversed": true,
-        "keywords": "打破常規、盲從、形式主義"
-      },
-      {
-        "position": "挑戰",
-        "number": 14,
-        "name": "節制",
-        "english": "Temperance",
-        "reversed": false,
-        "keywords": "平衡、調和、耐心"
-      },
-      {
-        "position": "建議",
-        "number": 10,
-        "name": "命運之輪",
-        "english": "Wheel of Fortune",
-        "reversed": false,
-        "keywords": "轉機、循環、順勢而為"
-      }
-    ],
-    "reading": {
-      "question_analysis": {
-        "category": "自我成長",
-        "is_closed": true,
-        "rewritten_question": "我可以如何評估報名英文檢定對個人發展的影響？"
-      },
-      "card_meanings": [
-        "教皇逆位：現況反映您可能正在遵循過於形式化的規則，缺乏個人真實意願。建議反思是否真正渴望學習，而非被迫接受。",
-        "節制正位：平衡與耐心是關鍵，需權衡利弊，考慮長遠影響，避免急躁決定。",
-        "命運之輪正位：轉機在即，順勢而為，但需謹慎評估風險與機會。"
-      ],
-      "summary": "考慮自身真實需求，權衡利弊，把握轉機，順勢而為。",
-      "advice": "評估自身動機，權衡風險與機會，保持耐心，抓住轉機。",
-      "reflection_questions": [
-        "我可以如何評估報名英文檢定對個人發展的影響？",
-        "如何在權衡利弊時保持耐心？",
-        "有哪些因素可以幫助我更好地把握轉機？"
-      ]
-    }
-  },
-  {
-    "time": "2026-11-07T13:37:35+08:00",
-    "model": "qwen3:1.7b",
-    "seconds": 40.4,
-    "question": "我想轉職做資料分析，要注意什麼？",
-    "cards": [
-      {
-        "position": "現況",
-        "number": 11,
-        "name": "正義",
-        "english": "Justice",
-        "reversed": true,
-        "keywords": "偏見、逃避責任、不公"
+        "keywords": "失望、信心不足、遙不可及感"
       },
       {
         "position": "挑戰",
         "number": 3,
         "name": "皇后",
         "english": "The Empress",
-        "reversed": false,
-        "keywords": "豐盛、滋養、創造力"
+        "reversed": true,
+        "keywords": "過度依賴、停滯、忽略自己"
       },
       {
         "position": "建議",
@@ -83,20 +32,123 @@
     ],
     "reading": {
       "question_analysis": {
-        "category": "事業",
+        "category": "感情",
         "is_closed": true,
-        "rewritten_question": "我可以如何評估轉行的風險與機會？"
+        "rewritten_question": "如何評估當前感情關係中的缺失與自我成長需求？"
       },
       "card_meanings": [
-        "正義逆位：暗示轉職過程中可能遇到偏見或逃避責任的困擾，需主動面對並調整策略。",
-        "皇后正位：顯示轉行需擁有創造力與資源，可透過技能轉移或新領域學習，創造豐盛的職涯發展。",
-        "力量逆位：提醒轉職易引發自我懷疑，需建立信心並逐步實踐，避免情緒失衡影響決策。"
+        "星星逆位（現況）：現況顯示感情中存在失望與信心不足，需關注對方是否真正理解與支持你，並思考是否需要調整關係的焦點。",
+        "皇后逆位（挑戰）：挑戰反映關係中過度依賴對方，需注意自我需求與個人成長，避免因依賴而忽略自身價值。",
+        "力量逆位（建議）：建議提醒需面對自我懷疑，學會情緒管理，並從中找到成長的動力，而非一味逞強。"
       ],
-      "summary": "轉職需面對內心阻力與外界評價，但透過創造力與資源管理，可轉化為機會。關鍵是克服自我懷疑，並以實際行動驗證新方向。",
-      "advice": "建議從現狀分析開始，明確轉職目標，並利用現有技能進行轉移。同時，保持開放心態，接受新挑戰，逐步建立自信。",
+      "summary": "感情關係中存在自信不足與自我依賴，需調整焦點，注重個人成長，並學會情緒管理。",
+      "advice": "建議透過自我反思，確認關係中哪些部分需要改善，並設定個人目標，同時保持開放心態，接受對方的進步。",
       "reflection_questions": [
-        "如何具體衡量轉職後的職業滿足度？",
-        "有哪些方法能幫助我克服轉行中的自我懷疑？"
+        "我是否在感情中過度依賴對方，導致自我需求被忽略？",
+        "如何在關係中平衡對對方的依賴與自我成長？",
+        "面對情緒失衡時，應該如何尋找健康的解決方法？"
+      ]
+    }
+  },
+  {
+    "time": "2026-11-07T13:48:22+08:00",
+    "model": "qwen3:1.7b",
+    "seconds": 20.0,
+    "question": "我該不該報名英文檢定？",
+    "cards": [
+      {
+        "position": "現況",
+        "number": 11,
+        "name": "正義",
+        "english": "Justice",
+        "reversed": true,
+        "keywords": "偏見、逃避責任、不公"
+      },
+      {
+        "position": "挑戰",
+        "number": 16,
+        "name": "高塔",
+        "english": "The Tower",
+        "reversed": false,
+        "keywords": "突發變動、舊結構崩解"
+      },
+      {
+        "position": "建議",
+        "number": 8,
+        "name": "力量",
+        "english": "Strength",
+        "reversed": true,
+        "keywords": "自我懷疑、情緒失衡、逞強"
+      }
+    ],
+    "reading": {
+      "question_analysis": {
+        "category": "自我成長",
+        "is_closed": true,
+        "rewritten_question": "如何在壓力與機會之間做出適合自己的選擇？"
+      },
+      "card_meanings": [
+        "正義逆位（現況）：代表當前的狀態可能受到偏見或不公影響，需要謹慎評估報名的價值與自身準備程度。",
+        "高塔正位（挑戰）：考試將帶來突發變動，需準備應對可能的意外情況，如成績不理想或需要調整學習策略。",
+        "力量逆位（建議）：需面對自我懷疑與情緒失衡，找到內在動力，並以實際行動克服恐懼。"
+      ],
+      "summary": "正義逆位顯示當前狀態可能受偏見影響，需謹慎評估報名價值；高塔正位提醒應對突發變動，準備應對可能的意外；力量逆位則需面對自我懷疑，找到內在動力。",
+      "advice": "在評估自身準備程度後，可考慮考試的長期影響，並準備應對變動的策略。同時，透過自我反思，克服恐懼，找到適合自己的學習方式。",
+      "reflection_questions": [
+        "如何評估自己準備的充分性？",
+        "面對突發變動時，應如何調整學習策略？",
+        "如何克服自我懷疑，建立自信？"
+      ]
+    }
+  },
+  {
+    "time": "2026-11-07T13:51:00+08:00",
+    "model": "qwen3:1.7b",
+    "seconds": 15.8,
+    "question": "我想轉職做資料分析，要注意什麼?",
+    "cards": [
+      {
+        "position": "現況",
+        "number": 21,
+        "name": "世界",
+        "english": "The World",
+        "reversed": false,
+        "keywords": "完成、圓滿、整合"
+      },
+      {
+        "position": "挑戰",
+        "number": 17,
+        "name": "星星",
+        "english": "The Star",
+        "reversed": false,
+        "keywords": "希望、療癒、重拾信心"
+      },
+      {
+        "position": "建議",
+        "number": 2,
+        "name": "女祭司",
+        "english": "The High Priestess",
+        "reversed": false,
+        "keywords": "直覺、內在聲音、靜觀"
+      }
+    ],
+    "reading": {
+      "question_analysis": {
+        "category": "事業",
+        "is_closed": true,
+        "rewritten_question": "我可以如何評估轉職的挑戰？"
+      },
+      "card_meanings": [
+        "世界正位表示轉職後能整合所有資源，最終達到圓滿。需謹慎面對變革，相信自己的準備。",
+        "星星正位顯示轉職過程中有希望與療癒，需保持平靜心態，避免被挫折打倒。",
+        "女祭司正位強調直覺與內在聲音，建議順從心聲，並以謹慎態度面對新職業。"
+      ],
+      "summary": "轉職需整合舊經驗，保持平靜，聽從內心聲音。",
+      "advice": "轉職時需謹慎面對變化，保持信心，並善用直覺判斷。",
+      "reflection_questions": [
+        "如何在轉職時平衡舊經驗與新挑戰？",
+        "在面對轉職的困難時，該如何保持內心的平靜？",
+        "直覺在轉職決定中扮演什麼角色？"
       ]
     }
   }
